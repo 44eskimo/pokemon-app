@@ -1,25 +1,14 @@
 import logo from './logo.svg';
+import LazyLoad from 'react-lazy-load';
 import './App.css';
+import PokemonList from './components/pokemon-list';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Raj</h1>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='bt-container'> 
+    <PokemonList />
+  </div>
   );
 }
 
